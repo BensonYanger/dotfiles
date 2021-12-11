@@ -69,13 +69,13 @@ ZSH_THEME="tonotdo"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(archlinux
-	sudo
-	git
-	python
-	gnu-utils
-	zsh-autosuggestions
-	zsh-syntax-highlighting
-	)
+        sudo
+        git
+        python
+        gnu-utils
+        zsh-autosuggestions
+        zsh-syntax-highlighting
+        )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,3 +110,5 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=240"
 
 export ETCDCTL_API=2
 export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+
+export EDITOR=nano
