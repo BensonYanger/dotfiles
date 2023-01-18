@@ -21,7 +21,13 @@ set $term alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 # Font
-font pango: DejaVu Sans Mono for Powerline
+font pango: "DejaVu Sans Mono for Powerline" 12
+
+# Border
+default_border none
+default_floating_border none
+titlebar_padding 1
+titlebar_border_thickness 0
 
 # Gap
 gaps inner 5
