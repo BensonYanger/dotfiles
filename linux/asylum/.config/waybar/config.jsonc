@@ -188,7 +188,7 @@
             "portable": "",
             "car": "",
         },
-        "on-click": "alacritty --title pulsemixer -e pulsemixer"
+        "on-click": "pavucontrol"
     },
 }
 

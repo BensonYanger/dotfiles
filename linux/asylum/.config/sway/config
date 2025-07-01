@@ -74,10 +74,6 @@ output DP-3 bg ~/wallpapers/wallhaven-yqj53x.png fill
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-exec swayidle -w \
-     timeout 300 'swaylock -f -c 000000' \
-     timeout 360 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-     before-sleep 'swaylock -f -c 000000'
 
 ### Input configuration
 #
@@ -265,6 +261,8 @@ mode "screenshot" {
 
 ### Exec
 
+exec gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
+exec mako
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec sworkstyle &> /tmp/sworkstyle.log
 
